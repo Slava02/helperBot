@@ -1,0 +1,31 @@
+{"level":"ERROR","ts":"2024-05-04T20:20:48.875+0300","msg":"[can not ping the database: dial tcp [::1]:5432: connectex: No connection could be made because the target machine actively refused it.]"}
+{"level":"ERROR","ts":"2024-05-08T14:11:28.452+0300","msg":"[can't open database: sql: unknown driver \"sqlite3\" (forgotten import?)]"}
+{"level":"ERROR","ts":"2024-05-08T14:13:40.074+0300","msg":"[can't open database: sql: unknown driver \"sqlite3\" (forgotten import?)]"}
+{"level":"INFO","ts":"2024-05-08T14:16:13.888+0300","msg":"[Bot Starting...]"}
+{"level":"ERROR","ts":"2024-05-08T14:16:14.124+0300","msg":"[can't connect to the bot: Not Found]"}
+{"level":"ERROR","ts":"2024-05-08T14:16:14.124+0300","msg":"[bot failed to start: Not Found]"}
+{"level":"INFO","ts":"2024-05-08T14:17:46.829+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-08T14:17:47.376+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"ERROR","ts":"2024-05-08T14:31:48.125+0300","msg":"[no such table: users]"}
+{"level":"INFO","ts":"2024-05-08T14:40:09.757+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-08T14:40:20.502+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-08T14:40:20.766+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-08T14:42:04.442+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-08T14:42:10.049+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-08T14:42:10.269+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"ERROR","ts":"2024-05-08T14:42:30.235+0300","msg":"[no such table: users]"}
+{"level":"ERROR","ts":"2024-05-08T15:08:07.857+0300","msg":"[no such table: users]"}
+{"level":"INFO","ts":"2024-05-08T15:08:41.028+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-08T15:09:08.298+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-08T15:09:08.548+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"ERROR","ts":"2024-05-08T15:09:13.151+0300","msg":"[no such table: users]"}
+{"level":"INFO","ts":"2024-05-08T15:10:00.914+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-08T15:10:06.680+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-08T15:10:06.889+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"ERROR","ts":"2024-05-08T15:10:26.143+0300","msg":"[no such table: users]"}
+{"level":"INFO","ts":"2024-05-08T15:35:47.018+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-08T16:37:01.137+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-08T16:37:01.395+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"ERROR","ts":"2024-05-08T16:37:01.616+0300","msg":"[no such table: users]"}
+{"level":"ERROR","ts":"2024-05-08T16:37:01.617+0300","msg":"[no such table: users]"}
+{"level":"ERROR","ts":"2024-05-08T16:37:17.344+0300","msg":"[no such table: users]"}
