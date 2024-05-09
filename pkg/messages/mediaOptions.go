@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func SaveOrRemove() string {
+func MediaOptions() string {
 	return fmt.Sprintf("Удалить или сохранить?")
 }
 
@@ -22,4 +22,12 @@ func SaveError() string {
 
 func Remove() string {
 	return fmt.Sprintf("Введите номер: ")
+}
+
+func NoData() string {
+	return fmt.Sprintf("В таблице пока нет данных")
+}
+
+func PickRandomErr() string {
+	return fmt.Sprintf("Ошибка при выборе случайного объекта, попробуйте еще раз")
 }

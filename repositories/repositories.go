@@ -23,4 +23,5 @@ type User interface {
 
 type Media interface {
 	Save(ctx context.Context, update tgbotapi.Update, user *models.User, mediaType models.Media) error
+	PickRandom(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User, mediaType models.Media) (string, error)
 }

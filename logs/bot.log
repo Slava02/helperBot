@@ -115,3 +115,6 @@
 {"level":"INFO","ts":"2024-05-09T22:01:34.988+0300","msg":"[Received an interrupt, Bot stopped...]"}
 {"level":"INFO","ts":"2024-05-09T22:01:42.534+0300","msg":"[Bot Starting...]"}
 {"level":"INFO","ts":"2024-05-09T22:01:45.262+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T22:58:18.812+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T22:58:24.677+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T22:58:24.901+0300","msg":"[Authorized on account slava_server_alert_bot]"}

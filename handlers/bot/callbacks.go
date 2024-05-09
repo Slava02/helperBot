@@ -38,15 +38,17 @@ func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update t
 		msg = h.callback.Media(ctx, msg, user)
 	case "book":
 		mediaType = models.Book
-		msg = h.callback.SaveOrRemove(ctx, msg, user)
+		msg = h.callback.MediaOptions(ctx, msg, user)
 	case "movie":
 		mediaType = models.Movie
-		msg = h.callback.SaveOrRemove(ctx, msg, user)
+		msg = h.callback.MediaOptions(ctx, msg, user)
 	case "saveWhat":
 		UserEnterMode = true
 		msg = h.callback.SaveWhat(ctx, msg, user, mediaType)
+	case "pickRandom":
+		msg = h.callback.PickRandom(ctx, msg, user, mediaType)
 	case "save":
-		msg = h.callback.Save(ctx, msg, user, mediaType)
+		msg = h.callback.SaveSuccess(ctx, msg, user, mediaType)
 	case "remove":
 		msg = h.callback.Remove(ctx, msg, user, mediaType)
 	case "backToMain":
