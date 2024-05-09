@@ -4,9 +4,9 @@ package bot
 import (
 	"context"
 	"fmt"
-
 	"github.com/Slava02/helperBot/configs"
 	"github.com/Slava02/helperBot/handlers"
+	"github.com/Slava02/helperBot/models"
 	"github.com/Slava02/helperBot/pkg/logger"
 	"github.com/Slava02/helperBot/repositories"
 	"github.com/Slava02/helperBot/services/account"
@@ -16,6 +16,8 @@ import (
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
+
+var UserEnterMode models.EnterMode
 
 type bot struct {
 	handler *handler

@@ -42,11 +42,15 @@ func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update t
 	case "movie":
 		mediaType = models.Movie
 		msg = h.callback.SaveOrRemove(ctx, msg, user)
+	case "saveWhat":
+		UserEnterMode = true
+		msg = h.callback.SaveWhat(ctx, msg, user, mediaType)
 	case "save":
 		msg = h.callback.Save(ctx, msg, user, mediaType)
 	case "remove":
 		msg = h.callback.Remove(ctx, msg, user, mediaType)
 	case "backToMain":
+		UserEnterMode = false
 		msg = h.callback.Menu(ctx, msg, user)
 	}
 

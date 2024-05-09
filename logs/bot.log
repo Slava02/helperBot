@@ -47,3 +47,59 @@
 {"level":"INFO","ts":"2024-05-09T10:44:35.128+0300","msg":"[Bot Starting...]"}
 {"level":"INFO","ts":"2024-05-09T10:44:35.324+0300","msg":"[Authorized on account slava_server_alert_bot]"}
 {"level":"INFO","ts":"2024-05-09T10:45:29.830+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T13:28:05.460+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T13:28:05.675+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"ERROR","ts":"2024-05-09T13:28:22.962+0300","msg":"[no such table: users]"}
+{"level":"INFO","ts":"2024-05-09T16:14:22.387+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T16:35:49.455+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T16:35:49.676+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"ERROR","ts":"2024-05-09T16:35:55.549+0300","msg":"[no such table: users]"}
+{"level":"INFO","ts":"2024-05-09T16:43:45.197+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T16:44:47.305+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T16:44:49.669+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T17:02:55.562+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T17:03:25.081+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T17:03:25.292+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T17:06:17.856+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T17:06:22.825+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T17:06:23.023+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T17:06:45.324+0300","msg":"[UserEnterMode ==  true]"}
+{"level":"INFO","ts":"2024-05-09T17:08:23.217+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T17:08:57.414+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T17:08:57.605+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T17:09:10.606+0300","msg":"[UserEnterMode ==  true]"}
+{"level":"INFO","ts":"2024-05-09T17:09:52.440+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T17:10:04.946+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T17:10:05.163+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T17:10:16.086+0300","msg":"[UserEnterMode ==  true]"}
+{"level":"INFO","ts":"2024-05-09T17:11:12.880+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T17:11:19.402+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T17:11:19.591+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T17:11:34.124+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"INFO","ts":"2024-05-09T17:13:48.085+0300","msg":"[UserEnterMode ==  false Msg:  Введите корректное сообщение или команду.]"}
+{"level":"INFO","ts":"2024-05-09T17:13:57.624+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T17:14:02.513+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T17:14:02.723+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T17:14:15.953+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"INFO","ts":"2024-05-09T17:16:11.016+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T17:17:21.816+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T17:17:22.033+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T17:17:32.539+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"ERROR","ts":"2024-05-09T17:18:09.871+0300","msg":"[no such table: users]"}
+{"level":"INFO","ts":"2024-05-09T17:18:21.105+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"INFO","ts":"2024-05-09T20:02:21.912+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"INFO","ts":"2024-05-09T20:02:27.137+0300","msg":"[UserEnterMode ==  false Msg:  Введите корректное сообщение или команду.]"}
+{"level":"INFO","ts":"2024-05-09T20:04:16.806+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T20:04:26.822+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T20:04:27.044+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-09T20:04:39.627+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"INFO","ts":"2024-05-09T20:04:41.614+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"INFO","ts":"2024-05-09T20:04:43.579+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"INFO","ts":"2024-05-09T20:05:27.521+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"INFO","ts":"2024-05-09T20:05:29.445+0300","msg":"[UserEnterMode ==  true Msg:  ]"}
+{"level":"INFO","ts":"2024-05-09T21:14:13.611+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-09T21:17:42.213+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-09T21:17:42.461+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"ERROR","ts":"2024-05-09T21:18:04.241+0300","msg":"[no such table: Info]"}
+{"level":"ERROR","ts":"2024-05-09T21:18:04.242+0300","msg":"[no such table: Info]"}
+{"level":"ERROR","ts":"2024-05-09T21:18:04.242+0300","msg":"[no such table: Info]"}

@@ -3,6 +3,7 @@ package repositories
 
 import (
 	"context"
+	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 
 	"github.com/Slava02/helperBot/models"
 )
@@ -10,6 +11,7 @@ import (
 // DB implements all database functionalities.
 type DB interface {
 	User
+	Media
 	Close(ctx context.Context) error
 }
 
@@ -17,4 +19,8 @@ type DB interface {
 type User interface {
 	CreateUser(ctx context.Context, user *models.User) error
 	GetUser(ctx context.Context, telegramID int64) (*models.User, error)
+}
+
+type Media interface {
+	Save(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User, mediaType models.Media) error
 }

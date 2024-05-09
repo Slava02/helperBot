@@ -15,7 +15,6 @@ import (
 	"github.com/Slava02/helperBot/models"
 	"github.com/Slava02/helperBot/pkg/logger/zap"
 	"github.com/Slava02/helperBot/repositories"
-	"github.com/Slava02/helperBot/repositories/mysql"
 	"github.com/urfave/cli/v2"
 	"go.uber.org/zap/zapcore"
 )
@@ -69,13 +68,6 @@ func serve(c *cli.Context) error {
 	var db repositories.DB
 
 	switch cfg.App.Driver {
-	case "mysql":
-		db, err = mysql.New(ctx, cfg.MySQL, logger)
-		if err != nil {
-			logger.Error(err)
-
-			return err
-		}
 	case "mysqlite":
 		db, err = mysqlite.New(ctx, cfg.MySQLite, logger)
 		if err != nil {

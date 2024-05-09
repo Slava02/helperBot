@@ -20,7 +20,16 @@ func (h *handler) Message(ctx context.Context, tgbot *tgbotapi.BotAPI, update tg
 	}
 
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, "")
-	msg = h.message.Wrong(ctx, msg, user)
+
+	if UserEnterMode == true {
+		var err error
+		msg, err = h.message.Save(ctx, msg, user, mediaType)
+		if err != nil {
+			h.logger.Error(err)
+		}
+	} else {
+		msg = h.message.Wrong(ctx, msg, user)
+	}
 
 	_, err := tgbot.Send(msg)
 	if err != nil {
