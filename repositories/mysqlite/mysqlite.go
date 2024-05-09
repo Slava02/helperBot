@@ -10,6 +10,11 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
+var createTables = []string{
+	`CREATE TABLE IF NOT EXISTS media (telegram_id INTEGER, media TEXT, media_type INTEGER)`,
+	`CREATE TABLE IF NOT EXISTS users (telegram_id INTEGER, username TEXT, firstname TEXT, lastname TEXT, joined_at INTEGER)`,
+}
+
 type mysqlite struct {
 	db     *sql.DB
 	logger logger.Logger
@@ -23,6 +28,14 @@ func New(ctx context.Context, cfg configs.MySQLite, logger logger.Logger) (repos
 
 	if err := db.PingContext(ctx); err != nil {
 		return nil, fmt.Errorf("can not ping the database: %v", err)
+	}
+
+	for _, q := range createTables {
+		db.ExecContext(ctx, q)
+		if err != nil {
+			logger.Error(err)
+			return nil, err
+		}
 	}
 
 	return &mysqlite{db: db, logger: logger}, nil

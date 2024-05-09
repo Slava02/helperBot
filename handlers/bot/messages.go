@@ -23,7 +23,7 @@ func (h *handler) Message(ctx context.Context, tgbot *tgbotapi.BotAPI, update tg
 
 	if UserEnterMode == true {
 		var err error
-		msg, err = h.message.Save(ctx, msg, user, mediaType)
+		msg, err = h.message.Save(ctx, msg, user, mediaType, update)
 		if err != nil {
 			h.logger.Error(err)
 		}
