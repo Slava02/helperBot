@@ -4,7 +4,7 @@ package handlers
 import (
 	"context"
 
-	"cleanBot/configs"
+	"github.com/Slava02/helperBot/configs"
 )
 
 // Bot implements bot functionalities.

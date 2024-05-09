@@ -4,7 +4,7 @@ package messages
 import (
 	"fmt"
 
-	"cleanBot/models"
+	"github.com/Slava02/helperBot/models"
 )
 
 // Main returns main menu's message.

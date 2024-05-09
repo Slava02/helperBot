@@ -4,9 +4,9 @@ package callback
 import (
 	"context"
 
-	"cleanBot/models"
-	"cleanBot/pkg/keyboards"
-	"cleanBot/pkg/messages"
+	"github.com/Slava02/helperBot/models"
+	"github.com/Slava02/helperBot/pkg/keyboards"
+	"github.com/Slava02/helperBot/pkg/messages"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 

@@ -2,8 +2,8 @@
 package bot
 
 import (
-	"cleanBot/pkg/logger"
-	"cleanBot/services"
+	"github.com/Slava02/helperBot/pkg/logger"
+	"github.com/Slava02/helperBot/services"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 

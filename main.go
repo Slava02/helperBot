@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"cleanBot/cmd"
+	"github.com/Slava02/helperBot/cmd"
 )
 
 func main() {

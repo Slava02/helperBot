@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"cleanBot/pkg/logger"
+	"github.com/Slava02/helperBot/pkg/logger"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

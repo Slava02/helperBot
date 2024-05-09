@@ -3,10 +3,13 @@ package bot
 
 import (
 	"context"
+	"github.com/Slava02/helperBot/models"
 
-	"cleanBot/models"
+	_ "github.com/Slava02/helperBot/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
+
+var mediaType models.Media
 
 // Callback handles callback requests.
 func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update tgbotapi.Update) {
@@ -31,6 +34,18 @@ func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update t
 		msg = h.callback.Information(ctx, msg, user)
 	case "help":
 		msg = h.callback.Help(ctx, msg, user)
+	case "media":
+		msg = h.callback.Media(ctx, msg, user)
+	case "book":
+		mediaType = models.Book
+		msg = h.callback.SaveOrRemove(ctx, msg, user)
+	case "movie":
+		mediaType = models.Movie
+		msg = h.callback.SaveOrRemove(ctx, msg, user)
+	case "save":
+		msg = h.callback.Save(ctx, msg, user, mediaType)
+	case "remove":
+		msg = h.callback.Remove(ctx, msg, user, mediaType)
 	case "backToMain":
 		msg = h.callback.Menu(ctx, msg, user)
 	}

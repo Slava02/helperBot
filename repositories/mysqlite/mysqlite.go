@@ -1,12 +1,12 @@
 package mysqlite
 
 import (
-	"cleanBot/configs"
-	"cleanBot/pkg/logger"
-	"cleanBot/repositories"
 	"context"
 	"database/sql"
 	"fmt"
+	"github.com/Slava02/helperBot/configs"
+	"github.com/Slava02/helperBot/pkg/logger"
+	"github.com/Slava02/helperBot/repositories"
 	_ "github.com/mattn/go-sqlite3"
 )
 

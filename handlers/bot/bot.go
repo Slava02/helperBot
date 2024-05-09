@@ -5,14 +5,14 @@ import (
 	"context"
 	"fmt"
 
-	"cleanBot/configs"
-	"cleanBot/handlers"
-	"cleanBot/pkg/logger"
-	"cleanBot/repositories"
-	"cleanBot/services/account"
-	"cleanBot/services/callback"
-	"cleanBot/services/command"
-	"cleanBot/services/message"
+	"github.com/Slava02/helperBot/configs"
+	"github.com/Slava02/helperBot/handlers"
+	"github.com/Slava02/helperBot/pkg/logger"
+	"github.com/Slava02/helperBot/repositories"
+	"github.com/Slava02/helperBot/services/account"
+	"github.com/Slava02/helperBot/services/callback"
+	"github.com/Slava02/helperBot/services/command"
+	"github.com/Slava02/helperBot/services/message"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )

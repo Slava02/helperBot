@@ -4,7 +4,7 @@ package repositories
 import (
 	"context"
 
-	"cleanBot/models"
+	"github.com/Slava02/helperBot/models"
 )
 
 // DB implements all database functionalities.

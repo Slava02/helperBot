@@ -5,7 +5,7 @@ import (
 	"context"
 	"fmt"
 
-	"cleanBot/models"
+	"github.com/Slava02/helperBot/models"
 )
 
 // Create create a new user.

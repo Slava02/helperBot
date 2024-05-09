@@ -1,9 +1,9 @@
 package mysqlite
 
 import (
-	"cleanBot/models"
 	"context"
 	"fmt"
+	"github.com/Slava02/helperBot/models"
 )
 
 func (m *mysqlite) CreateUser(ctx context.Context, user *models.User) error {

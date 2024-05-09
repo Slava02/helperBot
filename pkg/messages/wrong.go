@@ -2,7 +2,7 @@
 package messages
 
 import (
-	"cleanBot/models"
+	"github.com/Slava02/helperBot/models"
 )
 
 // wrong returns wrong command or message.

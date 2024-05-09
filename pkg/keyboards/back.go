@@ -7,11 +7,9 @@ import (
 
 // BackToMain returns back to main keyboard.
 func BackToMain() tgbotapi.InlineKeyboardMarkup {
-	return backToMainRu
+	return tgbotapi.NewInlineKeyboardMarkup(
+		tgbotapi.NewInlineKeyboardRow(
+			tgbotapi.NewInlineKeyboardButtonData("В главное меню", "backToMain"),
+		),
+	)
 }
-
-var backToMainRu = tgbotapi.NewInlineKeyboardMarkup(
-	tgbotapi.NewInlineKeyboardRow(
-		tgbotapi.NewInlineKeyboardButtonData("В главное меню", "backToMain"),
-	),
-)

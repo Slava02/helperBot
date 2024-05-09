@@ -6,9 +6,9 @@ import (
 	"database/sql"
 	"fmt"
 
-	"cleanBot/configs"
-	"cleanBot/pkg/logger"
-	"cleanBot/repositories"
+	"github.com/Slava02/helperBot/configs"
+	"github.com/Slava02/helperBot/pkg/logger"
+	"github.com/Slava02/helperBot/repositories"
 
 	_ "github.com/go-sql-driver/mysql"
 )

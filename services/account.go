@@ -4,7 +4,7 @@ package services
 import (
 	"context"
 
-	"cleanBot/models"
+	"github.com/Slava02/helperBot/models"
 )
 
 // Account implements user account functionalities.

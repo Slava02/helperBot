@@ -2,8 +2,8 @@
 package configs
 
 import (
-	"cleanBot/models"
-	"cleanBot/pkg/logger"
+	"github.com/Slava02/helperBot/models"
+	"github.com/Slava02/helperBot/pkg/logger"
 	"github.com/caarlos0/env/v8"
 	"github.com/joho/godotenv"
 )

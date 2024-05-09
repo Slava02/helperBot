@@ -2,8 +2,8 @@
 package services
 
 import (
-	"cleanBot/models"
 	"context"
+	"github.com/Slava02/helperBot/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 

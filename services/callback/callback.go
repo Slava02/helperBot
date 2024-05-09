@@ -2,9 +2,9 @@
 package callback
 
 import (
-	"cleanBot/pkg/logger"
-	"cleanBot/repositories"
-	"cleanBot/services"
+	"github.com/Slava02/helperBot/pkg/logger"
+	"github.com/Slava02/helperBot/repositories"
+	"github.com/Slava02/helperBot/services"
 )
 
 type call struct {

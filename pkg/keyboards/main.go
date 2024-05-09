@@ -9,8 +9,9 @@ import (
 func Main() tgbotapi.InlineKeyboardMarkup {
 	return tgbotapi.NewInlineKeyboardMarkup(
 		tgbotapi.NewInlineKeyboardRow(
-			tgbotapi.NewInlineKeyboardButtonData("Ваша информация", "information"),
+			//tgbotapi.NewInlineKeyboardButtonData("Ваша информация", "information"),
 			tgbotapi.NewInlineKeyboardButtonData("Помощь", "help"),
+			tgbotapi.NewInlineKeyboardButtonData("Медиатека", "media"),
 		),
 	)
 }

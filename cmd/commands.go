@@ -2,20 +2,20 @@
 package cmd
 
 import (
-	"cleanBot/repositories/mysqlite"
 	"context"
 	"fmt"
+	"github.com/Slava02/helperBot/repositories/mysqlite"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
 
-	"cleanBot/configs"
-	"cleanBot/handlers/bot"
-	"cleanBot/models"
-	"cleanBot/pkg/logger/zap"
-	"cleanBot/repositories"
-	"cleanBot/repositories/mysql"
+	"github.com/Slava02/helperBot/configs"
+	"github.com/Slava02/helperBot/handlers/bot"
+	"github.com/Slava02/helperBot/models"
+	"github.com/Slava02/helperBot/pkg/logger/zap"
+	"github.com/Slava02/helperBot/repositories"
+	"github.com/Slava02/helperBot/repositories/mysql"
 	"github.com/urfave/cli/v2"
 	"go.uber.org/zap/zapcore"
 )
