@@ -20,8 +20,8 @@ func SaveError() string {
 	return fmt.Sprintf("Не удалось сохранить, попробуйте еще раз:")
 }
 
-func Remove() string {
-	return fmt.Sprintf("Введите номер: ")
+func RemoveWhat() string {
+	return fmt.Sprintf("Выберите объект, который вы хотите удалить:\n")
 }
 
 func NoData() string {

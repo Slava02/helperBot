@@ -118,3 +118,12 @@
 {"level":"INFO","ts":"2024-05-09T22:58:18.812+0300","msg":"[Received an interrupt, Bot stopped...]"}
 {"level":"INFO","ts":"2024-05-09T22:58:24.677+0300","msg":"[Bot Starting...]"}
 {"level":"INFO","ts":"2024-05-09T22:58:24.901+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-10T18:39:44.912+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-10T18:39:47.821+0300","msg":"[Bot Starting...]"}
+{"level":"ERROR","ts":"2024-05-10T18:39:59.880+0300","msg":"[can't connect to the bot: Post \"https://api.telegram.org/bot6905373516:AAFXqrT7AAHCI-uBiLH_AIb2-Ol-2sChsXE/getMe\": dial tcp: lookup api.telegram.org: no such host]"}
+{"level":"ERROR","ts":"2024-05-10T18:39:59.880+0300","msg":"[bot failed to start: Post \"https://api.telegram.org/bot6905373516:AAFXqrT7AAHCI-uBiLH_AIb2-Ol-2sChsXE/getMe\": dial tcp: lookup api.telegram.org: no such host]"}
+{"level":"INFO","ts":"2024-05-10T18:40:13.964+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-10T18:40:14.949+0300","msg":"[Authorized on account slava_server_alert_bot]"}
+{"level":"INFO","ts":"2024-05-10T18:47:50.139+0300","msg":"[Received an interrupt, Bot stopped...]"}
+{"level":"INFO","ts":"2024-05-10T18:47:56.892+0300","msg":"[Bot Starting...]"}
+{"level":"INFO","ts":"2024-05-10T18:48:00.371+0300","msg":"[Authorized on account slava_server_alert_bot]"}

@@ -30,8 +30,13 @@ func (c *call) SaveSuccess(ctx context.Context, msg tgbotapi.MessageConfig, user
 	return msg
 }
 
-func (c *call) Remove(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User, media models.Media) tgbotapi.MessageConfig {
-	msg.Text = messages.Remove()
+func (c *call) RemoveWhat(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User, media models.Media) tgbotapi.MessageConfig {
+	mediaObjects, err := c.db.RemoveWhat(ctx, msg, user, media)
+	if err != nil {
+		// отправить собщение что не повезло не фартануло
+	}
+
+	msg.Text = messages.RemoveWhat() + mediaObjectsToCmd(mediaObjects)
 	msg.ReplyMarkup = keyboards.BackToMain()
 
 	return msg
@@ -50,4 +55,14 @@ func (c *call) PickRandom(ctx context.Context, msg tgbotapi.MessageConfig, user 
 	msg.ReplyMarkup = keyboards.BackToMain()
 
 	return msg
+}
+
+func mediaObjectsToCmd(mObjects []string) string {
+	var res string
+
+	for _, m := range mObjects {
+		res += "/remove_" + m
+	}
+
+	return res
 }

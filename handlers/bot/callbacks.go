@@ -49,8 +49,8 @@ func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update t
 		msg = h.callback.PickRandom(ctx, msg, user, mediaType)
 	case "save":
 		msg = h.callback.SaveSuccess(ctx, msg, user, mediaType)
-	case "remove":
-		msg = h.callback.Remove(ctx, msg, user, mediaType)
+	case "removeWhat":
+		msg = h.callback.RemoveWhat(ctx, msg, user, mediaType)
 	case "backToMain":
 		UserEnterMode = false
 		msg = h.callback.Menu(ctx, msg, user)

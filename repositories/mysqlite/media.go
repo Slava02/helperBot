@@ -29,3 +29,27 @@ func (m *mysqlite) PickRandom(ctx context.Context, msg tgbotapi.MessageConfig, u
 
 	return media, nil
 }
+
+func (m *mysqlite) RemoveWhat(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User, mediaType models.Media) ([]string, error) {
+	res := make([]string, 0)
+
+	q := `SELECT media FROM media WHERE media_type = ?`
+
+	rows, err := m.db.Query(q, mediaType)
+	if err != nil {
+		m.logger.Error(err)
+		return nil, fmt.Errorf("couldn't excecute RemoveWhat: %w", err)
+	}
+	defer rows.Columns()
+
+	for rows.Next() {
+		var tmp string
+		if err = rows.Scan(&tmp); err != nil {
+			return nil, fmt.Errorf("couldn't scan RemoveWhat: %w", err)
+		}
+
+		res = append(res, tmp)
+	}
+
+	return nil, nil
+}
