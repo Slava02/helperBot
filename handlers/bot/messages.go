@@ -21,6 +21,8 @@ func (h *handler) Message(ctx context.Context, tgbot *tgbotapi.BotAPI, update tg
 
 	msg := tgbotapi.NewMessage(update.Message.Chat.ID, "")
 
+	h.logger.Info("Handling Message. UserEnterMode: ", UserEnterMode)
+
 	if UserEnterMode == true {
 		var err error
 		msg, err = h.message.Save(ctx, msg, user, mediaType, update)

@@ -18,6 +18,19 @@ func (m *mysqlite) Save(ctx context.Context, update tgbotapi.Update, user *model
 	return nil
 }
 
+func (m *mysqlite) IsExist(ctx context.Context, update tgbotapi.Update, user *models.User, mediaType models.Media) (bool, error) {
+	q := `SELECT COUNT(*) FROM media WHERE media_type = ? AND media = ?`
+
+	var count int
+
+	if err := m.db.QueryRow(q, mediaType, update.Message.Text).Scan(&count); err != nil {
+		m.logger.Error(err)
+		return false, fmt.Errorf("couldn't check if Exists: %w", err)
+	}
+
+	return count > 0, nil
+}
+
 func (m *mysqlite) PickRandom(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User, mediaType models.Media) (string, error) {
 	q := `SELECT media FROM media WHERE telegram_id = ? AND media_type = ? ORDER BY RANDOM() LIMIT 1`
 
@@ -30,7 +43,7 @@ func (m *mysqlite) PickRandom(ctx context.Context, msg tgbotapi.MessageConfig, u
 	return media, nil
 }
 
-func (m *mysqlite) RemoveWhat(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User, mediaType models.Media) ([]string, error) {
+func (m *mysqlite) List(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User, mediaType models.Media) ([]string, error) {
 	res := make([]string, 0)
 
 	q := `SELECT media FROM media WHERE media_type = ?`
@@ -38,18 +51,28 @@ func (m *mysqlite) RemoveWhat(ctx context.Context, msg tgbotapi.MessageConfig, u
 	rows, err := m.db.Query(q, mediaType)
 	if err != nil {
 		m.logger.Error(err)
-		return nil, fmt.Errorf("couldn't excecute RemoveWhat: %w", err)
+		return nil, fmt.Errorf("couldn't excecute List: %w", err)
 	}
 	defer rows.Columns()
 
 	for rows.Next() {
 		var tmp string
 		if err = rows.Scan(&tmp); err != nil {
-			return nil, fmt.Errorf("couldn't scan RemoveWhat: %w", err)
+			return nil, fmt.Errorf("couldn't scan List: %w", err)
 		}
 
 		res = append(res, tmp)
 	}
 
-	return nil, nil
+	return res, nil
+}
+
+func (m *mysqlite) Remove(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User, mediaType models.Media, name string) error {
+	q := `DELETE FROM media WHERE media_type = ? AND media = ?`
+
+	if _, err := m.db.Exec(q, mediaType, name); err != nil {
+		return fmt.Errorf("couldn't remove object: %w", err)
+	}
+
+	return nil
 }

@@ -4,10 +4,6 @@ import (
 	"fmt"
 )
 
-func MediaOptions() string {
-	return fmt.Sprintf("Удалить или сохранить?")
-}
-
 func SaveWhat() string {
 	return fmt.Sprintf("Введите названия: ")
 }
@@ -24,10 +20,6 @@ func RemoveWhat() string {
 	return fmt.Sprintf("Выберите объект, который вы хотите удалить:\n")
 }
 
-func NoData() string {
-	return fmt.Sprintf("В таблице пока нет данных")
-}
-
-func PickRandomErr() string {
-	return fmt.Sprintf("Ошибка при выборе случайного объекта, попробуйте еще раз")
+func RemoveSuccess() string {
+	return fmt.Sprintf("Данные успешо удалены!")
 }

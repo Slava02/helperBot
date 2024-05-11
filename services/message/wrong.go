@@ -11,8 +11,7 @@ import (
 
 // Wrong shows a wrong message.
 func (m *msg) Wrong(ctx context.Context, msg tgbotapi.MessageConfig, user *models.User) tgbotapi.MessageConfig {
-	msg.Text = messages.Wrong(user)
-	//msg.ReplyMarkup = keyboards.BackToMain()
+	msg.Text = messages.Wrong()
 
 	return msg
 }

@@ -4,12 +4,14 @@ package bot
 import (
 	"context"
 	"github.com/Slava02/helperBot/models"
+	"regexp"
 
 	_ "github.com/Slava02/helperBot/models"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
 )
 
 var mediaType models.Media
+var removePat = regexp.MustCompile(`^r#.`)
 
 // Callback handles callback requests.
 func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update tgbotapi.Update) {
@@ -29,29 +31,33 @@ func (h *handler) Callback(ctx context.Context, tgbot *tgbotapi.BotAPI, update t
 		h.logger.Error(err)
 	}
 
-	switch update.CallbackQuery.Data {
-	case "information":
+	switch data := update.CallbackQuery.Data; {
+	case data == "information":
 		msg = h.callback.Information(ctx, msg, user)
-	case "help":
+	case data == "help":
 		msg = h.callback.Help(ctx, msg, user)
-	case "media":
+	case data == "media":
 		msg = h.callback.Media(ctx, msg, user)
-	case "book":
+	case data == "book":
 		mediaType = models.Book
 		msg = h.callback.MediaOptions(ctx, msg, user)
-	case "movie":
+	case data == "movie":
 		mediaType = models.Movie
 		msg = h.callback.MediaOptions(ctx, msg, user)
-	case "saveWhat":
+	case data == "saveWhat":
 		UserEnterMode = true
 		msg = h.callback.SaveWhat(ctx, msg, user, mediaType)
-	case "pickRandom":
+	case data == "pickRandom":
 		msg = h.callback.PickRandom(ctx, msg, user, mediaType)
-	case "save":
-		msg = h.callback.SaveSuccess(ctx, msg, user, mediaType)
-	case "removeWhat":
+	case data == "save":
+		msg = h.callback.Save(ctx, msg, user, mediaType)
+	case data == "removeWhat":
 		msg = h.callback.RemoveWhat(ctx, msg, user, mediaType)
-	case "backToMain":
+	case removePat.MatchString(data):
+		msg = h.callback.Remove(ctx, msg, user, mediaType, data)
+	case data == "list":
+		msg = h.callback.List(ctx, msg, user, mediaType)
+	case data == "backToMain":
 		UserEnterMode = false
 		msg = h.callback.Menu(ctx, msg, user)
 	}
